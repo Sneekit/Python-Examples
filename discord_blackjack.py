@@ -1,4 +1,4 @@
-#this is a data scraping discord bot that pulls chat data. It also includes a working blackjack and hangman game, along with user stat tracking.
+#this is a data scraping discord bot that pulls chat data. It also includes a working blackjack game, along with user stat tracking.
 
 import discord
 import random
