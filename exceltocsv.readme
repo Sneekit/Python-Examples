@@ -1,0 +1,42 @@
+Setup for Python 2.6.6:
+
+sudo yum install python-devel
+sudo yum install gcc ( if they don't have gcc )
+sudo yum install gcc-c++ ( if they don't have gcc )
+wget https://bootstrap.pypa.io/2.6/get-pip.py
+sudo python get-pip.py
+sudo pip install numpy==1.7.1
+sudo pip install pandas==0.17.1
+sudo pip install xlrd
+sudo pip install xlsxwriter
+
+For python 2.7.x
+sudo pip install numpy==1.7.5
+sudo pip install pandas==0.20.3
+sudo pip install xlrd
+Pip 20.0.2 works with python 2.7
+
+Setup for Python 3:
+
+To install pip:
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+sudo python get-pip.py
+rm get-pip.py
+
+If pip is already installed, upgrade pip:
+
+sudo pip install --upgrade pip
+
+To install dependencies:
+sudo pip install numpy
+sudo pip install pandas
+sudo pip install xlrd
+sudo pip install xlsxwriter
+
+Notes:
+Will create csv files based on the xlsx file. It follows the following
+naming convention: <original file name>_sheet<sheet#>.csv
+
+For example, if testing.xlsx had two sheets it would create two files:
+testing_sheet1.csv
+testing_sheet2.csv
