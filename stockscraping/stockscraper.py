@@ -1,11 +1,12 @@
-#this uses the IEX finance API to scrape stock data every 5 minutes
+# this uses the IEX finance API to scrape stock data every 5 minutes
+# also connects to a MySQL database and updates data needed for predictions.
 
 from iexfinance.stocks import Stock
 import mysql.connector
 import datetime
 
 # mysql connection
-db = mysql.connector.connect(user='johnm', password='**********',host='127.0.0.1',database='Stock')
+db = mysql.connector.connect(user='johnm', password='*REDACTED*',host='127.0.0.1',database='Stock')
 sql = db.cursor()
 
 
