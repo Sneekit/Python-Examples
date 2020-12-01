@@ -1,5 +1,5 @@
 # Python-Examples
-Python Examples
+This repository contains sample code written in the Python programming language.
 
 The discord_blackjack.py script demonstrates SQL database integrations, API integrations, and some card mechanics for the blackjack game.
 
