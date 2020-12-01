@@ -22,6 +22,8 @@ class LinkedList:
 
 		if self.head is None:
 			self.head = newnode
+		elif self.head.next is None:
+			self.head.next = newnode
 
 		if self.tail is None:
 			self.tail = newnode
@@ -102,9 +104,15 @@ class LinkedList:
 		if remove is not None:
 			# is this the tail?
 			if remove == self.tail:
-				prev.next = None
-				self.tail = prev
-				current=None
+				# last entry? strip the list entirely
+				if remove == self.head:
+					remove = None
+					self.head = None
+					self.tail = None
+				else:
+					prev.next = None
+					self.tail = prev
+					current=None
 			# is this the head?
 			elif remove == self.head:
 				# is there more than one item in list?
