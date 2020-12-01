@@ -92,7 +92,7 @@ def generate_csv(infile):
 				add_field(custid,True)
 				add_field(attachment_name,True)
 				add_field(attachment_path,True)
-				add_field('https://dakcs-heat-archive.s3.us-west-2.amazonaws.com',True)
+				add_field('*REDACTED*',True)
 				add_field(file_name,False)
 				outfile.write("\n")
 			else:
