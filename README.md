@@ -1,7 +1,7 @@
 # Python-Examples
 This repository contains sample code written in the Python programming language.
 
-The linkedlist.py script is a library that adds singly linked lists to python. This was written with a tail, which breaks persistence, but increases iffeciency in certain functions ( pop for example )
+The linkedlist.py script is a library that adds singly linked lists to python. This was written with a tail, which breaks persistence, but increases iffeciency in certain functions.
 
 The binarytree.py script is a library that adds binary trees to python. It includes some traversal methods.
 
